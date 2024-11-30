@@ -1,0 +1,32 @@
+@import "../../assets/scss/variable";
+
+.toast {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    z-index: 9999;
+    /* Ensures it's on top of other elements */
+    padding: 15px 30px;
+    color: white;
+    font: 100 22px var(--fontFamily);
+    border-radius: 8px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    background: rgba(40, 40, 40, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .cross-icon {
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            fill: white;
+        }
+        
+    }
+
+}

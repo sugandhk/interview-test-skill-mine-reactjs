@@ -1,0 +1,55 @@
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 16px;
+
+    &:focus {
+      outline: none;
+      border-color: #007bff;
+    }
+  }
+
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+    &.disabled {
+      background-color: #6c757d;
+      cursor: not-allowed;
+    }
+  }
+
+  .split-screen {
+    display: flex;
+    margin-top: 20px;
+
+    .panel {
+      flex: 1;
+      padding: 10px;
+
+      &:not(:last-child) {
+        border-right: 1px solid #ccc;
+      }
+
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
